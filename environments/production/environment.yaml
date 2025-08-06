@@ -1,0 +1,29 @@
+version: 1.0
+app:
+  maven:
+    groupId: net.wasdev.wlp.sample
+    artifactId: daytrader7
+    version: "1.0.0"
+    type: zip
+  instances:
+    min: 1
+    max: 1
+  java: 17
+  endpoints: public
+  env:
+    - name: httpPort
+      value: "9080"
+    - name: httpsPort
+      value: "9443"
+    - name: dbHost
+      # value: 2f3279a5-73d1-4859-88f0-a6c3e6b4b907.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud
+      value: ec2-54-161-142-53.compute-1.amazonaws.com
+    - name: dbPort
+      # value: "30756"
+      value: "60005"
+    - name: dbName
+      # value: BLUDB
+      value: TRADEDB
+    - name: dbUser
+      # value: kjs86460
+      value: db2inst1
