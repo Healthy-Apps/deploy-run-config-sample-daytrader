@@ -12,7 +12,8 @@
         <feature>concurrent-1.0</feature>
         <feature>jsonp-1.0</feature>
         <feature>beanValidation-1.1</feature>
-		<feature>appSecurity-2.0</feature>
+		<featureManager remove="ejbRemote-3.2"/>
+		<featureManager remove="appSecurity-2.0"/>
     </featureManager>
 
 	<!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties --> 
@@ -20,10 +21,6 @@
 		<tcpOptions soReuseAddr="true"/> 
 		<httpOptions maxKeepAliveRequests="-1"/>
 	</httpEndpoint>
-
-	<basicRegistry>
-    	<user name="admin" password="passw0rd"/>
-	</basicRegistry>
 
 	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
 	
