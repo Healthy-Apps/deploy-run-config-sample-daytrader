@@ -13,7 +13,6 @@
         <feature>jsonp-1.0</feature>
         <feature>beanValidation-1.1</feature>
 		<featureManager remove="ejbRemote-3.2"/>
-		<featureManager remove="appSecurity-2.0"/>
     </featureManager>
 
 	<!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties --> 
