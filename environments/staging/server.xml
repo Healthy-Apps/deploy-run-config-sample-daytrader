@@ -1,5 +1,5 @@
 <server>
-    <featureManager>
+    <featureManager installFeatures="false">
         <feature>ejb-3.2</feature>
         <feature>servlet-3.1</feature>
         <feature>jsf-2.2</feature>
@@ -12,7 +12,6 @@
         <feature>concurrent-1.0</feature>
         <feature>jsonp-1.0</feature>
         <feature>beanValidation-1.1</feature>
-		<featureManager remove="ejbRemote-3.2"/>
     </featureManager>
 
 	<!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties --> 
