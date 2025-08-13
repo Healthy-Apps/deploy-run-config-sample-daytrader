@@ -1,5 +1,5 @@
 <server>
-    <featureManager installFeatures="false">
+    <featureManager>
         <feature>ejb-3.2</feature>
         <feature>servlet-3.1</feature>
         <feature>jsf-2.2</feature>
@@ -14,6 +14,7 @@
         <feature>beanValidation-1.1</feature>
     </featureManager>
 
+	<orb id="defaultOrb" requireUserRegistry="false"/>
 	<!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties --> 
 	<httpEndpoint host="*" httpPort="9082" httpsPort="9443" id="defaultHttpEndpoint"> 
 		<tcpOptions soReuseAddr="true"/> 
