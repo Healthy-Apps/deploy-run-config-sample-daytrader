@@ -16,6 +16,9 @@
         <feature>localConnector-1.0</feature>
     </featureManager>
 
+	<basicRegistry>
+    	<user name="usr:0" password="xxx"/>
+	</basicRegistry>
 	<!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties  --> 
 
 	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
