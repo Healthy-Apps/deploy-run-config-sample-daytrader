@@ -1,4 +1,5 @@
 <server>
+	<webContainer disableSecurity="true"/>
     <featureManager>
         <feature>ejb-3.2</feature>
         <feature>servlet-3.1</feature>
@@ -13,7 +14,6 @@
         <feature>jsonp-1.0</feature>
         <feature>beanValidation-1.1</feature>
 		<feature>databaseUserRegistry-1.0</feature>
-	    <feature>appSecurity-2.0</feature> 
     </featureManager>
 
 	<!-- Minimal Derby User Registry Configuration -->
